@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- Header and Navigation Bar -->
+    <header>
+        <h1>Science Fiction</h1>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="registration.html">Registartion</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <header>
+            <h2>Register for the Summit</h2>
+        </header>
+
+        <form >
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" ><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" ><br><br>
+            </fieldset>
+
+            <!-- Ticket Information Fieldset -->
+            <fieldset>
+                <legend>Ticket Information</legend>
+                
+                <label for="ticket-type">Ticket Type:</label><br>
+                <select id="ticket-type" name="ticket-type" >
+                    <option value="general-admission">General Admission</option>
+                    <option value="vip">VIP</option>
+                    <option value="student">Student</option>
+                </select><br><br>
+
+                <label>Workshops:</label><br>
+                <input type="checkbox" id="workshop1" name="workshop" value="Workshop 1">
+                <label for="workshop1">AI and Robotics</label><br>
+
+                <input type="checkbox" id="workshop2" name="workshop" value="Workshop 2">
+                <label for="workshop2">Space Exploration</label><br>
+
+                <input type="checkbox" id="workshop3" name="workshop" value="Workshop 3">
+                <label for="workshop3">Quantum Computing</label><br><br>
+            </fieldset>
+
+            <!-- Additional Comments Fieldset -->
+            <fieldset>
+                <legend>Additional Comments</legend>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special requirements or requests?"></textarea><br><br>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+</body>
+</html>
